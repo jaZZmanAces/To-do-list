@@ -34,6 +34,7 @@ if (isset($_GET['id'])) {
     exit;
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,6 +43,7 @@ if (isset($_GET['id'])) {
 </head>
 <body>
     <h1>Edit Task</h1>
+    <link rel="stylesheet" href="style.css">
     <form action="edit_task.php?id=<;?= $task['id'] ?>" method="POST">
         <input type="text" name="task" value="<?= htmlspecialchars($task['task']) ?>" required>
         <button type="submit">Update Task</button>
